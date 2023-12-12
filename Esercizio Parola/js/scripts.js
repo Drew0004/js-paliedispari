@@ -1,4 +1,4 @@
-const userWord = prompt('Inserisci una parola, verificherò se è palindorma');
+const userWord = prompt('Inserisci una parola, verificherò se è palindorma').toLowerCase();
 console.log(userWord);
 
 const reverseWord = reverseWords(userWord);
