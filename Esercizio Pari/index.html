@@ -27,10 +27,20 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-8">
+                        
                         <form>
-                            <label class="text-center my-3" for="user-number">Inserisci un numero da 1 a 5</label>
-                            <input class="form-control" id="user-number" type="text" placeholder="Inserisci un numero da uno a cinque" aria-label="default input example">
+                            <label class="fs-4 fw-bold my-3" for="user-select">Scegli tra pari o dispari</label>
+                            <select class="form-select" id="user-select" aria-label="Default select example">
+                                <option disabled selected>Pari o Dispari</option>
+                                <option value="even">Pari</option>
+                                <option value="odd">Dispari</option>
+                            </select>
+                            
+                            <label class="fs-4 fw-bold my-3" for="user-number">Inserisci un numero da 1 a 5</label>
+                            <input class="form-control" id="user-number" type="number" placeholder="Inserisci un numero da uno a cinque" aria-label="default input example">
+
                         </form>
+                    
                     </div>
                 </div>
             </div>
