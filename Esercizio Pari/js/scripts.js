@@ -11,20 +11,27 @@ submitButton.addEventListener('click', function(){
 
     let cpuNumber = randomNumber(1,5);
     console.log("Il computer ha generato " + cpuNumber, typeof cpuNumber);
-    document.getElementById('cpu-number').innerHTML=cpuNumber;
+    document.getElementById('cpu-number').innerHTML= "Il computer ha generato: " + cpuNumber;
     
     const myResult = mySum (userNumber,cpuNumber);
     console.log ("Il risultato è " + myResult);
+    document.getElementById('tot').innerHTML= "Totale= " + myResult;
 
     const oddEven = isEven(myResult);
     console.log("Il risultato è pari? " + oddEven);
     
-    if ( oddEven==userSelect){
-        alert('Ho vinto ;)');
+    const matchResult = document.getElementById('match-result');
+    
+    if (oddEven==userSelect){
+        // alert('Ho vinto ;)');
+        matchResult.innerHTML='Hai vinto :D';
+
     }else{
-        alert('Ho perso :c');
+        matchResult.innerHTML='Hai perso :c';
     }
     
+
+
 })
 
 // Creo funzione che genera numeri random
