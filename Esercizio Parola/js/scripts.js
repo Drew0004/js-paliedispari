@@ -3,7 +3,7 @@ console.log(userWord);
 
 const reverseWord = reverseWords(userWord);
 
-function reverseWords(){
+function reverseWords(word){
     // let wordResult = userWord.split('');
     // console.log(wordResult);
 
@@ -14,9 +14,9 @@ function reverseWords(){
     // console.log(wordResult); 
     
     // versione abbreviata
-    let wordResult = userWord.split('').reverse().join('');
+    let wordResult = word.split('').reverse().join('');
 
-    if (userWord == wordResult){
+    if (word == wordResult){
         alert('Perfetto! La tua parola è palindroma');
     }
     else{
