@@ -18,8 +18,10 @@ function reverseWords(word){
 
     if (word == wordResult){
         alert('Perfetto! La tua parola è palindroma');
+        return true;
     }
     else{
         alert('La tua parola non è palindroma, riprova.');
+        return false;
     }
 }
